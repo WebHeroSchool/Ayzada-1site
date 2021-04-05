@@ -76,8 +76,8 @@ body {
 .main__title {
   display: flex;
   font: bold 50px/66px 'PT Serif', arial, helvetica, sans-serif;
-
 }
+
 .main__text {
   font: bold 18px/21px 'Roboto', arial, helvetica, sans-serif;
 }
