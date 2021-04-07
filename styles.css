@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
+  margin-bottom: 100px;
 }
 
 .logo,
@@ -43,7 +44,7 @@ body {
   position: relative;
   padding: 40px 0;
   padding-left: 44px;
-  font: bold 24px/31px 'PT Serif', helvetica, sans-serif;
+  font: 24px/31px 'PT_Serifbold', helvetica, sans-serif;
   width: 190px;
   height: 35px;
 }
@@ -51,7 +52,7 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+  font: 18px/21px 'Roboto_medium', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -65,25 +66,44 @@ body {
 
 .menu__item:hover {
   opacity: .5;
-  font-size: 20px;
-  transition: font-size .8s ease-out .1s;
 }
 
 .menu__item:last-child {
   margin-right: 0;
 }
 
+.main {
+  padding: 0 63% 100px 0;
+  background: top right no-repeat url(img/mainimg.svg);
+}
+
 .main__title {
-  display: flex;
-  font: bold 50px/66px 'PT Serif', arial, helvetica, sans-serif;
+  font: bold 50px/66px 'PT_Serifbold', arial, helvetica, sans-serif;
+  margin: 0 0 40px 0;
+}
+
+.main__title-text_highlight {
+  background: #ecf3ff;
 }
 
 .main__text {
-  font: bold 18px/21px 'Roboto', arial, helvetica, sans-serif;
+  font: 18px/21px 'Roboto_medium', arial, helvetica, sans-serif;
+  margin: 0 0 41px 0;
 }
 
 .main__button {
-  font: bold 14px/16px 'Roboto', arial, helvetica, sans-serif;
+  display: inline-block;
+  padding: 14px 16px;
+  color: #fff;
+  background: #0056ec;
+  font: 14px/16px 'Roboto_medium', arial, helvetica, sans-serif;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
 }
 
 .menu__item_active::after {
@@ -108,12 +128,4 @@ body {
   width: 100%;
   height: 3px;
   background: #0056ec;
-}
-
-.main {
-  width: 434px;
-  height: 195px;
-  top: 212px;
-  left: 218px;
-  align-items: center;
 }
