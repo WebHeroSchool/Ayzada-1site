@@ -88,8 +88,8 @@ body {
 }
 
 .question_mark {
-  padding: 0;
-  width: 100px;
+  position: relative;
+  right: 18px;
 }
 
 .main__text {
