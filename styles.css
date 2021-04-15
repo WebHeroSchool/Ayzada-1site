@@ -42,8 +42,8 @@ body {
 
 .logo {
   position: relative;
-  padding: 40px 0 40px 44px;
-  margin-right: 915px;
+  padding: 40px 0 40px 48px;
+  margin-right: 911px;
   font: 24px/31px 'PT_Serifbold', helvetica, sans-serif;
   width: 190px;
   height: 35px;
@@ -73,6 +73,7 @@ body {
 }
 
 .main {
+  margin-right: 5px;
   padding: 0 63% 150px 0;
   background: top right no-repeat url(img/mainimg1920.svg);
 }
@@ -80,7 +81,7 @@ body {
 .main__title {
   font: bold 66px/87px 'PT_Serifbold', arial, helvetica, sans-serif;
   margin: 0 0 38px 0;
-  padding-top: 75px;
+  padding: 75px 0 0 2px;
 }
 
 .main__title-text_highlight {
@@ -94,7 +95,7 @@ body {
 
 .main__text {
   font: 22px/26px 'Roboto_medium', arial, helvetica, sans-serif;
-  margin: 0 100px 45px 0;
+  margin: 0 100px 43px 0;
 }
 
 .main__button {
