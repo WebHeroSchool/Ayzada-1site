@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  max-width: 1920px;
+  //max-width: 1920px;
 }
 
 .wrapper {
@@ -156,4 +156,25 @@ body {
 .footer__circle:hover {
   border: solid 2px #0056ec;
   transition: opacity .8s;
+}
+
+@media (max-width: 1366px) (min-width: 1024px) {
+.wrapper {
+  width: 69%;
+}
+
+.logo {
+  padding: 40px 0 40px 5.4%;
+  margin-right: 44.3%;
+}
+
+.logo__circle {
+  left: 3.3%;
+  top: 47%;
+}
+
+.logo__circle_color_blue {
+  left: 8%;
+}
+
 }
