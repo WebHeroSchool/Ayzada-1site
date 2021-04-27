@@ -369,7 +369,6 @@ body {
   .menu {
     display: block;
     position: absolute;
-    width: 100%;
     bottom: 0;
     left: 0;
     transform: translateY(100%);
@@ -377,6 +376,7 @@ body {
     font-size: 0;
     overflow: hidden;
     transition: 0.5s all;
+    background-color: #fff;
   }
 
   .menu__item{
@@ -388,8 +388,12 @@ body {
   }
 
   #check-menu:checked ~ .menu {
-    max-height: 400px;
-    font-size: 12px;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: 30px;
+    line-height: 40px;
+    padding-top: 26.2%;
+    z-index: 4;
   }
 
   #check-menu:checked ~ .first {
@@ -412,10 +416,10 @@ body {
     visibility: hidden;
   }
 
-/*.main:hover::after, {
-    display: block;
-    content: '';
+  .menu__item_active::after {
     position: absolute;
-    overflow: hidden;
-    }*/
+    display: none;
+    content: '';
+  }
+
   }
