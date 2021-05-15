@@ -103,20 +103,40 @@ body {
   margin: 0 100px 43px 0;
 }
 
+/*.main__button {
+
+}*/
+
+
 .main__button {
   display: inline-block;
   margin-left: 3px;
   padding: 17px 33px 19px 23px;
   color: #fff;
-  background: #0056ec;
   font: 18px/21px 'Roboto_medium', arial, helvetica, sans-serif;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+  animation: animate_gradient 5s ease infinite;
 }
 
 .main__button:hover {
-  opacity: .5;
+  animation: none;
+  cursor: pointer;
+}
+
+@keyframes animate_gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .menu__item_active::after {
@@ -166,6 +186,7 @@ body {
 #check-menu {
   display: none;
 }
+
 
 @media (max-width: 1367px) {
 .wrapper {
